@@ -1,17 +1,11 @@
-//
-//  iOSExampleAppDelegate.h
-//  iOSExample
-//
-//  Created by Justin DeWind on 7/21/11.
-//  Copyright 2011 Atomic Object. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "ApplicationBootstrapper.h"
 
 @interface iOSExampleAppDelegate : NSObject <UIApplicationDelegate> {
-
+  ApplicationBootstrapper *_applicationBootstrapper;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) UIWindow *window;
+@property (nonatomic, retain) ApplicationBootstrapper *applicationBootstrapper;
 
 @end
